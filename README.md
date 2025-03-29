@@ -11,12 +11,15 @@ sudo pip3 install kiwi
 2. git clone
 ```bash
 git clone https://github.com/nostalgicz/ndnSIM-2.8.git
+cd ndnSIM-2.8
+git submodule update --init --recursive
 ```
 ## Install and Run
 1. build
 ```bash
 cd ns-3
 ./waf configure --enable-example
+./waf
 ```
 2. run
 ```bash
